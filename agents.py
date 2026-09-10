@@ -20,8 +20,15 @@ load_dotenv()
 #     temperature=0
 # )
 
+# llm = ChatOpenAI(
+#     model="Qwen/Qwen3.5-9B:deepinfra",
+#     base_url="https://router.huggingface.co/v1",
+#     api_key=os.getenv("HF_TOKEN"),
+#     temperature=0
+# )
+
 llm = ChatOpenAI(
-    model="Qwen/Qwen3.5-9B:deepinfra",
+    model="meta-llama/Llama-3.1-8B-Instruct",
     base_url="https://router.huggingface.co/v1",
     api_key=os.getenv("HF_TOKEN"),
     temperature=0
